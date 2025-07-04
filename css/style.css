@@ -422,3 +422,97 @@ body {
     transparent 60%);
   opacity: 0;
 }
+
+/* Адаптация для телефонов */
+@media (max-width: 768px) {
+  /* Общие правки */
+  body {
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+  
+  /* Шапка */
+  .header__inner {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  
+  .nav {
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* Главный экран */
+  .intro__title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  
+  .intro__subtitle {
+    font-size: 18px;
+  }
+  
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .skills__item {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  /* Секции */
+  .section {
+    padding: 50px 0;
+  }
+  
+  .section__title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .bands, .projects {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .band, .project {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  /* Контакты */
+  .contact__link {
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+  
+  /* Эффекты */
+  .cursor, .cursor-follower {
+    display: none;
+  }
+}
+
+/* Для маленьких экранов */
+@media (max-width: 480px) {
+  .intro__title {
+    font-size: 28px;
+  }
+  
+  .section__title {
+    font-size: 26px;
+  }
+  
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
